@@ -1,0 +1,12 @@
+Settings:
+  # If enabled, players can interact with a fish or squid while holding
+  # a potion of water breathing and allow it to breathe air infinitely!
+  #
+  # Can be removed by interacting with a milk bucket!
+  Edible-Infinite-Breathing: true
+  # If enabled, players can interact with any fish while holding a lead
+  # and walk them around like any other entity.
+  Fish-Walking: true
+  # If enabled, fish and squids with water breathing will glow
+  # to signify their superiority to fish who cannot breathe air.
+  Fish-Glow: true

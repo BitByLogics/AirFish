@@ -1,0 +1,5 @@
+name: AirFish
+version: '${project.version}'
+main: net.bitbylogic.airfish.AirFish
+api-version: '1.20'
+authors: [BitByLogic]
