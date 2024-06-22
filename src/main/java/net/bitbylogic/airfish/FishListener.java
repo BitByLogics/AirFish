@@ -3,9 +3,7 @@ package net.bitbylogic.airfish;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.Sound;
-import org.bukkit.entity.Fish;
 import org.bukkit.entity.LivingEntity;
-import org.bukkit.entity.Squid;
 import org.bukkit.entity.WaterMob;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -29,7 +27,7 @@ public class FishListener implements Listener {
 
     @EventHandler
     public void onFishDamage(EntityDamageEvent event) {
-        if (!(event.getEntity() instanceof Fish) && !(event.getEntity() instanceof Squid)) {
+        if (!(event.getEntity() instanceof WaterMob)) {
             return;
         }
 
@@ -50,7 +48,7 @@ public class FishListener implements Listener {
             return;
         }
 
-        if (!(event.getRightClicked() instanceof Fish)) {
+        if (!(event.getRightClicked() instanceof WaterMob)) {
             return;
         }
 
@@ -74,7 +72,7 @@ public class FishListener implements Listener {
 
     @EventHandler
     public void onUnleash(PlayerInteractAtEntityEvent event) {
-        if (!(event.getRightClicked() instanceof Fish)) {
+        if (!(event.getRightClicked() instanceof WaterMob)) {
             return;
         }
 
@@ -100,7 +98,7 @@ public class FishListener implements Listener {
             return;
         }
 
-        if (!(event.getRightClicked() instanceof Fish) && !(event.getRightClicked() instanceof Squid)) {
+        if (!(event.getRightClicked() instanceof WaterMob)) {
             return;
         }
 
@@ -136,7 +134,7 @@ public class FishListener implements Listener {
 
     @EventHandler
     public void onMilkCleanse(PlayerInteractAtEntityEvent event) {
-        if (!(event.getRightClicked() instanceof Fish) && !(event.getRightClicked() instanceof Squid)) {
+        if (!(event.getRightClicked() instanceof WaterMob)) {
             return;
         }
 
@@ -165,7 +163,7 @@ public class FishListener implements Listener {
             return;
         }
 
-        if (!(event.getEntity() instanceof Fish) && !(event.getEntity() instanceof Squid)) {
+        if (!(event.getEntity() instanceof WaterMob)) {
             return;
         }
 
